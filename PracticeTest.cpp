@@ -25,7 +25,7 @@ TEST(PracticeTest, is_not_a_simple_palindrome)
 {
     Practice obj;
     bool actual = obj.isPalindrome("ba");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, is_odd_pal)
@@ -39,7 +39,7 @@ TEST(PracticeTest, is_not_odd_pal)
 {
     Practice obj;
     bool actual = obj.isPalindrome("baa");
-    ASSERT_TRUE(actual);
+    ASSERT_FALSE(actual);
 }
 
 TEST(PracticeTest, is_single_pal)
