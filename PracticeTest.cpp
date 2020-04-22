@@ -66,8 +66,8 @@ TEST(PracticeTest, simple)
     int second = 2;
     int third = 3;
     obj.sortDescending(first, second, third);
-    EXPECT_EQ(1, first);
+    EXPECT_EQ(3, first);
     EXPECT_EQ(2, second);
-    EXPECT_EQ(3, third);
+    EXPECT_EQ(1, third);
 }
 
