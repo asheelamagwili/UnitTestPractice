@@ -59,7 +59,7 @@ TEST(PracticeTest, is_empty)
 
 /* DESCENDING TESTING */
 
-TEST(PracticeTest, simple)
+TEST(PracticeTest, simple_descending)
 {
     Practice obj;
     int first = 1;
