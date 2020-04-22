@@ -65,7 +65,7 @@ TEST(PracticeTest, simple)
     int first = 1;
     int second = 2;
     int third = 3;
-    Practice actual = obj.sortDescending(first, second, third);
+    void actual = obj.sortDescending(first, second, third);
     EXPECT_EQ(1, first);
     EXPECT_EQ(2, second);
     EXPECT_EQ(3, third);
