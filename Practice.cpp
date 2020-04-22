@@ -3,8 +3,6 @@
 
 using std::string;
 
-2 1 3
-
 // Receive three integers and rearrange their values so that they are in
 // descending order from greatest (first) to least (third)
 void Practice::sortDescending(int & first, int & second, int & third)
