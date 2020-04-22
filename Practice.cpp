@@ -3,27 +3,25 @@
 
 using std::string;
 
+2 1 3
+
 // Receive three integers and rearrange their values so that they are in
 // descending order from greatest (first) to least (third)
 void Practice::sortDescending(int & first, int & second, int & third)
 {
-  if( first < second )
+  int my_list[3];
+  my_list[0] = first;
+  my_list[1] = second;
+  my_list[2] = third;
+
+  for(int i = 0;i <= 2; i++)
   {
-    int temp = first;
-    first = second;
-    second = temp;
-  }
-  if( second < third )
-  {
-    int temp = second;
-    second = third;
-    third = temp;
-  }
-  if( first < third )
-  {
-    int temp = first;
-    first = third;
-    third = temp;
+    if(my_list[i] < my_list[i+1])
+    {
+      int temp = my_list[i];
+      my_list[i] = my_list[i+1];
+      my_list[i+1] = temp;
+    }
   }
 }
 
