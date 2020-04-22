@@ -62,7 +62,12 @@ TEST(PracticeTest, is_empty)
 TEST(PracticeTest, simple)
 {
     Practice obj;
-    bool actual = obj.sortDescending(1,2,3);
-    ASSERT_TRUE(actual);
+    int first = 1;
+    int second = 2;
+    int third = 3;
+    Practice actual = obj.sortDescending(first, second, third);
+    EXPECT_EQ(1, first);
+    EXPECT_EQ(2, second);
+    EXPECT_EQ(3, third);
 }
 
