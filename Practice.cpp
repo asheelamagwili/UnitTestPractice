@@ -3,6 +3,8 @@
 
 using std::string;
 
+1 2 3
+
 // Receive three integers and rearrange their values so that they are in
 // descending order from greatest (first) to least (third)
 void Practice::sortDescending(int & first, int & second, int & third)
@@ -20,6 +22,13 @@ void Practice::sortDescending(int & first, int & second, int & third)
       my_list[i] = my_list[i+1];
       my_list[i+1] = temp;
     }
+  }
+
+  if(my_list[2] > my_list[0])
+  {
+      int temp = my_list[2];
+      my_list[2] = my_list[0];
+      my_list[0] = temp;
   }
 }
 
