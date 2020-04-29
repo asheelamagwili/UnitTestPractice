@@ -29,6 +29,13 @@ TEST(PracticeTest, is_not_a_simple_palindrome)
     ASSERT_FALSE(actual);
 }
 
+TEST(PracticeTest, is_not_a_simple_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("ab");
+    ASSERT_FALSE(actual);
+}
+
 TEST(PracticeTest, is_odd_pal)
 {
     Practice obj;
@@ -43,6 +50,20 @@ TEST(PracticeTest, is_not_odd_pal)
     ASSERT_FALSE(actual);
 }
 
+TEST(PracticeTest, is_not_odd_pal)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("aab");
+    ASSERT_FALSE(actual);
+}
+
+TEST(PracticeTest, is_not_odd_pal)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("aba");
+    ASSERT_TRUE(actual);
+}
+
 TEST(PracticeTest, is_single_pal)
 {
     Practice obj;
@@ -54,6 +75,13 @@ TEST(PracticeTest, is_empty)
 {
     Practice obj;
     bool actual = obj.isPalindrome("");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_empty)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome(" ");
     ASSERT_TRUE(actual);
 }
 
