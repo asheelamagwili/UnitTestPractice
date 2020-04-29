@@ -83,7 +83,7 @@ TEST(PracticeTest, all_zeros)
     EXPECT_EQ(0, third);
 }
 
-TEST(PracticeTest, one_negative)
+TEST(PracticeTest, middle_negative)
 {
     Practice obj;
     int first = 5;
@@ -93,6 +93,30 @@ TEST(PracticeTest, one_negative)
     EXPECT_EQ(5, first);
     EXPECT_EQ(2, second);
     EXPECT_EQ(-3, third);
+}
+
+TEST(PracticeTest, first_negative)
+{
+    Practice obj;
+    int first = -5;
+    int second = 3;
+    int third = 2;
+    obj.sortDescending(first, second, third);
+    EXPECT_EQ(3, first);
+    EXPECT_EQ(2, second);
+    EXPECT_EQ(-5, third);
+}
+
+TEST(PracticeTest, last_negative)
+{
+    Practice obj;
+    int first = 1;
+    int second = 3;
+    int third = -2;
+    obj.sortDescending(first, second, third);
+    EXPECT_EQ(3, first);
+    EXPECT_EQ(1, second);
+    EXPECT_EQ(-2, third);
 }
 
 TEST(PracticeTest, all_range)
@@ -105,6 +129,30 @@ TEST(PracticeTest, all_range)
     EXPECT_EQ(5, first);
     EXPECT_EQ(0, second);
     EXPECT_EQ(-3, third);
+}
+
+TEST(PracticeTest, all_pos_simple)
+{
+    Practice obj;
+    int first = 0;
+    int second = 2;
+    int third = 5;
+    obj.sortDescending(first, second, third);
+    EXPECT_EQ(5, first);
+    EXPECT_EQ(2, second);
+    EXPECT_EQ(0, third);
+}
+
+TEST(PracticeTest, two_similar)
+{
+    Practice obj;
+    int first = 6;
+    int second = 5;
+    int third = 6;
+    obj.sortDescending(first, second, third);
+    EXPECT_EQ(6, first);
+    EXPECT_EQ(6, second);
+    EXPECT_EQ(5, third);
 }
 
 
